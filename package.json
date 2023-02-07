@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app_auth.js & node app_rest.js & node app.js"
+    "start": "concurrently \"node app_auth.js\" \"node app_rest.js\" \"node app.js\""
   },
   "author": "",
   "license": "ISC",
