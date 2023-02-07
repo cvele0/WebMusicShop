@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "cvele",
+    "password": "difAaNg2hcXS3FRE7X7kG5ZEs1HdMNPB",
+    "database": "musicshop",
+    "host": "dpg-cfh7k682i3mp5rvfrv6g-a.frankfurt-postgres.render.com",
+    "url": "postgres://cvele:difAaNg2hcXS3FRE7X7kG5ZEs1HdMNPB@dpg-cfh7k682i3mp5rvfrv6g-a.frankfurt-postgres.render.com/musicshop",
+    "dialect": "postgres",
+    "logging": false,
+    "port": 5432,
+    "sl1": true,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "production": {
+    "username": "cvele",
+    "password": "difAaNg2hcXS3FRE7X7kG5ZEs1HdMNPB",
+    "database": "musicshop",
+    "host": "dpg-cfh7k682i3mp5rvfrv6g-a.frankfurt-postgres.render.com",
+    "url": "postgres://cvele:difAaNg2hcXS3FRE7X7kG5ZEs1HdMNPB@dpg-cfh7k682i3mp5rvfrv6g-a/musicshop",
+    "dialect": "postgres",
+    "logging": false,
+    "port": 5432,
+    "sl1": true,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
