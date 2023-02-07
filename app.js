@@ -239,9 +239,9 @@ app.use("/shops", shopRoutes);
 app.use(express.static(path.join(__dirname, 'static')));
 
 const staticMdl = express.static(path.join(__dirname, 'dist'));
-app.use(static);
+app.use(staticMdl);
 app.use(history({index: '/index.html'}));
-app.use(static);
+app.use(staticMdl);
 
 server.listen({ port: 8000 }, async () => {
     await sequelize.authenticate();
