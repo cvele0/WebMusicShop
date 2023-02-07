@@ -65,7 +65,7 @@ export default new Vuex.Store({
   },
   actions: {
     register({ commit }, obj) {
-      fetch(`${authPath}/register`, {
+      fetch(`/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(obj)
@@ -82,7 +82,7 @@ export default new Vuex.Store({
     },
 
     login({ commit }, obj) {
-      fetch(`${authPath}/login`, {
+      fetch(`/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(obj)
@@ -100,7 +100,7 @@ export default new Vuex.Store({
     },
     
     fetchInstruments({ commit, state }) {
-      fetch(`${rootPath}/admin/instruments`, {
+      fetch(`/admin/instruments`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -156,7 +156,7 @@ export default new Vuex.Store({
     // },
 
     fetchAvailableInstruments({ commit, state }) {
-      fetch(`${rootPath}/admin/availableInstruments`, {
+      fetch(`/admin/availableInstruments`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
