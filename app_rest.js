@@ -40,6 +40,6 @@ app.use('/admin', productOrders);
 app.use('/admin', shops);
 app.use('/admin', availableInstruments);
 
-app.listen({ port: 9090 }, async () => {
+app.listen({ port: 9999 }, async () => {
   await sequelize.authenticate();
 });

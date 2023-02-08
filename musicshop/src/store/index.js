@@ -4,7 +4,7 @@ import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
-const rootPath = 'http://127.0.0.1:9090';
+const rootPath = 'http://127.0.0.1:9999';
 const authPath = 'http://127.0.0.1:9000';
 
 export default new Vuex.Store({
