@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "concurrently \"node app_auth.js\" \"node app_rest.js\" \"node app.js\""
+    "node1": "node app_auth.js",
+    "node2": "node app_rest.js",
+    "node3": "node app.js",
+    "all": "npm-run-all -p -r node1 node2 node3"
   },
   "author": "",
   "license": "ISC",
@@ -26,5 +29,8 @@
     "sequelize-cli": "^6.5.2",
     "socket.io": "^4.5.4",
     "vue-socket.io": "^3.0.10"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }
