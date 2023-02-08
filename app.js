@@ -109,17 +109,17 @@ function authToken(req, res, next) {
 }
 
 
-app.get('/register', (req, res) => {
-    res.sendFile('register.html', { root: './static' });
-});
+// app.get('/register', (req, res) => {
+//     res.sendFile('register.html', { root: './static' });
+// });
 
-app.get('/login', (req, res) => {
-    res.sendFile('login.html', { root: './static' });
-});
+// app.get('/login', (req, res) => {
+//     res.sendFile('login.html', { root: './static' });
+// });
 
-app.get('/', authToken, (req, res) => {
-    res.sendFile('index.html', { root: './static' });
-});
+// app.get('/', authToken, (req, res) => {
+//     res.sendFile('index.html', { root: './static' });
+// });
 
 app.get('/country', authToken, (req, res) => {
     const { role } = req.user;
