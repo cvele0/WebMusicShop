@@ -7,7 +7,7 @@
     "node1": "node app_auth.js",
     "node2": "node app_rest.js",
     "node3": "node app.js",
-    "all": "npm-run-all -p -r node1 node2 node3"
+    "dev": "concurrently npm:node1 npm:node2 npm:node3"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "jsonwebtoken": "^9.0.0",
     "mariadb": "^3.0.2",
     "mysql2": "^2.3.3-rc.0",
+    "npm-run-parallel": "^0.1.0",
     "pg": "^8.9.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.9.0",
