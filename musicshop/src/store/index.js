@@ -65,7 +65,7 @@ export default new Vuex.Store({
   },
   actions: {
     register({ commit }, obj) {
-      fetch(`/auth-register`, {
+      fetch(`/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(obj)
@@ -82,7 +82,7 @@ export default new Vuex.Store({
     },
 
     login({ commit }, obj) {
-      fetch(`/auth-login`, {
+      fetch(`/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(obj)

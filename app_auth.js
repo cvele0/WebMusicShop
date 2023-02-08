@@ -30,7 +30,7 @@ const shema = Joi.object().keys({
 });
 
 
-app.post('/auth-register', (req, res) => {
+app.post('/register', (req, res) => {
 
     const obj = {
         name: req.body.name,
@@ -67,7 +67,7 @@ app.post('/auth-register', (req, res) => {
     } );
 });
 
-app.post('/auth-login', (req, res) => {
+app.post('/login', (req, res) => {
 
     Users.findOne({ where: { name: req.body.name } })
         .then( usr => {
