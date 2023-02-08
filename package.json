@@ -7,7 +7,7 @@
     "node1": "node app_auth.js",
     "node2": "node app_rest.js",
     "node3": "node app.js",
-    "dev": "concurrently npm:node1 npm:node2 npm:node3"
+    "dev": "npm run node1 && npm run node2 && npm run node3"
   },
   "author": "",
   "license": "ISC",
